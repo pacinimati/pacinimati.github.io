@@ -1,0 +1,303 @@
+/* 
+🎨 Paleta Inspirada en Argentina (elegante y patriótica)
+Celeste (#6CCFF6) — fondo suave o detalles.
+
+Blanco (#FFFFFF) — texto o secciones principales.
+
+Azul marino (#003049) — headers, botones.
+
+Gris claro (#F4F4F4) — fondos secundarios.
+
+Ideal si querés destacar su identidad nacional de forma moderna.*/
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    height: 12vh;
+    background-color: #003049; /* Azul marino elegante */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra exagerada para mayor profundidad */
+    color: white;
+}
+
+.header-logo {
+    width: 60px;
+    height: auto;
+    filter: brightness(0) invert(1); /* Mantiene el logo visible sobre fondo oscuro */
+}
+
+.button, .dropdown-toggle {
+    font-family: 'Poppins', sans-serif;
+    background-color: #006494; /* Azul más vibrante */
+    background-image: url('https://i.pinimg.com/originals/3c/ba/1f/3cba1f80f4461da36a7cd6c38f0bb652.gif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para botones */
+}
+
+.button:hover, .dropdown-toggle:hover {
+    background-color: #005073; /* Azul más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dropdown-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #006494; /* Fondo azul vibrante */
+    color: white; /* Texto blanco al pasar el mouse */
+}
+
+
+#the-best {
+    height: 100vh;
+    background-color: lightblue;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media4.giphy.com/media/xUA7aT4k7JLXH71zG0/giphy.gif?cid=6c09b952sdwuuh36h8i3fxj8h8xcfc3vl2ck7xmxc549uphm&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+#the-best h1 {
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Asegura que no haya espacio adicional */
+    color: white; /* Color del texto */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1); /* Sombra más exagerada para el texto */
+    font-size: 3.5rem;
+    font-weight: 700; 
+    text-align: center; 
+    line-height: 1.2; 
+}
+
+#hero {
+    height: 100vh;
+    padding:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(219, 219, 219);
+    gap:20px;
+}
+
+#hero .text-container {
+    max-width: 400px; 
+    text-align: center; 
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    font-weight: 600;
+    color: #003049; 
+     
+}
+
+#hero .photo {
+    max-width: 600px; /* Limita el tamaño de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Sombra para la imagen */
+}
+
+
+
+
+#clubs {
+    height: 100vh;
+    background-color: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.club-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.club-photo {
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+#club-text {
+    max-width: 500px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #003049;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.club-controls {
+    display: flex;
+    gap: 20px;
+}
+
+.club-controls button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #006494;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.club-controls button:hover {
+    background-color: #005073;
+    transform: scale(1.1);
+}
+
+#national-team {
+    height: 100vh;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.national-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.containernational{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    gap:0;
+}
+
+#national-text {
+    max-width: 500px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #003049;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+
+}
+
+#national-title{
+    max-width: 500px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333333;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+#stats-container {
+    background-color: lightblue;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.namu.wiki/i/g-k7vCOSXdH_vI2mXhbbHjBkGLz15Yd-CIo5NAB6rAjRg_TB8XrLk0NfJ05vCo3wN2T0ObJrbXUIUcQvBjQSFg.gif');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px; /* Espaciado superior e inferior para que no se vea tan pegado */
+  }
+
+#stats {
+    max-width: 480px; /* Aumento el ancho máximo */
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1); /* Más sombra para darle más profundidad */
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  #stats h2 {
+    margin-bottom: 20px; /* Más espacio entre el título y la tabla */
+    font-size: 24px; /* Título más grande */
+    color: #333;
+    font-weight: 700; /* Hacerlo más negrita */
+    text-align: center;
+  }
+  
+  #stats table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px; /* Aumento el tamaño de la fuente de la tabla */
+  }
+  
+  #stats th, #stats td {
+    padding: 12px; /* Más espacio dentro de las celdas */
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  #stats th {
+    background-color: #222831;
+    color: #f9f9f9;
+    font-weight: 600; /* Hacer los encabezados más visibles */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  #stats tr:last-child td {
+    border-bottom: none;
+  }
+  
+
+#footer {
+    height: 10vh;
+    padding: 5px;
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    text-align: center;
+    background-color: rgb(219, 219, 219);
+}

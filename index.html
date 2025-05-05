@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class = "header">
+        <img src="https://png.pngtree.com/png-clipart/20221222/original/pngtree-messi-clipart-10-number-typography-png-image_8794213.png" alt="Messi Logo" class="header-logo" style="width: 55px; height: auto; filter: brightness(0) invert(1);">
+        <button class = "button">
+            SECCIONES
+        </button>
+        <div class="dropdown">
+            <div class="dropdown-menu">
+              <a href="#hero">Biografia</a>
+              <a href="#clubs">Clubs</a>
+              <a href="#national-team">Seleccion</a>
+              <a href="#stats">Estadisticas</a>
+            </div>
+            <button class="dropdown-toggle">SECCIONES</button>
+          </div>
+    </div>
+    <div id ="the-best">
+        <h1>LIONEL MESSI</h1>
+        <h1>EL MEJOR DE LA HISTORIA</h1>
+    </div>
+    <div id = "hero">
+        <img class="photo" src="https://i.pinimg.com/736x/04/0d/6e/040d6edb1df431aba2a1c888b366c209.jpg" alt="Lionel Messi">
+        <div class = text-container>
+            <p>
+                Lionel Messi, nacido el 24 de junio de 1987 en Rosario, Argentina, es considerado uno de los mejores futbolistas de todos los tiempos. Desde joven mostró un talento excepcional, lo que lo llevó a unirse a las divisiones juveniles del FC Barcelona. Durante su carrera, Messi ha ganado múltiples títulos, incluyendo varias Ligas de Campeones de la UEFA y Balones de Oro. Su habilidad, visión y capacidad goleadora lo han convertido en un ícono mundial del deporte.
+            </p>
+        </div>
+        
+    </div>
+    <div id="clubs">
+        <div class="club-container">
+            <img id="club-image" src="" alt="Club de Messi" class="club-photo">
+            <div class="text-container" id="club-text">
+                <!-- Texto cargado dinámicamente -->
+            </div>
+            <div class="club-controls">
+                <button id="prev-club">⬅</button>
+                <button id="next-club">➡</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="national-team">
+        <div class="national-container">
+            <div class="containernational">
+                <img id="national-image" src="" class="club-photo">
+                <div class="club-controls">
+                    <button id="prev-national">⬅</button>
+                    <button id="next-national">➡</button>
+                </div>
+            </div>
+            <div class="text-container">
+                <h2 id="national-title"></h2>
+                <p id="national-text"></p> <!-- Descripción de la competencia -->
+            </div>
+        </div>
+    </div>
+
+
+    <div id="stats-container">
+        <div id="stats">
+          <h2>Estadisticas</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Equipo</th>
+                <th>Goles</th>
+                <th>Asist.</th>
+                <th>Títulos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Barcelona</td>
+                <td>672</td>
+                <td>305</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td>PSG</td>
+                <td>32</td>
+                <td>35</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>Inter Miami</td>
+                <td>12</td>
+                <td>5</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Argentina</td>
+                <td>106</td>
+                <td>56</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      
+    
+    <div id = "footer">
+        <p>© 2025 Matias Pacini. Todos los derechos reservados.</p>
+    </div>
+</body>
+</html>
